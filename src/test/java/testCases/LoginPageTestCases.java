@@ -16,6 +16,7 @@ public class LoginPageTestCases extends CommonMain{
 		LoginPageObjects.loginbtn.click();
 		
 		TakeScreenshot.myTakeScreenshot("loginpage.png");
+		System.out.println("Loginpage success");
 		
 
 	}
