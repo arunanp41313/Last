@@ -14,36 +14,36 @@ public class FolderCreation {
 	public static File  myFolderCreation() {
 
 		Date date= new Date();
-		SimpleDateFormat dateformat=new SimpleDateFormat("dd_MMM_yy_HHmmss", Locale.ENGLISH);
+		SimpleDateFormat dateformat=new SimpleDateFormat("dd_MMM_yy_HH_mm_ss", Locale.ENGLISH);
 		String formateddate=dateformat.format(date);
-		System.out.println(formateddate);
+		System.out.println("Folder created Time : " +formateddate);
 		String jenkinsWorkspace = System.getenv("WORKSPACE");
-		System.out.println(jenkinsWorkspace);
+		System.out.println("Jenkins Workspace available or Not : " +jenkinsWorkspace);
 		//If jenkins Workspace not available
 		if (jenkinsWorkspace == null) {
 			directory=new File(".//src//test//resources//"+ formateddate);
-			System.out.println("folder is available : " +directory.exists());
+			System.out.println("Local Directory is available or Not : " +directory.exists());
 			if (!directory.exists()) {
 				boolean created = directory.mkdirs(); // Create directories recursively
 				if (created) {
-					System.out.println("Directory created: " + directory.getAbsolutePath());
+					System.out.println("Local Directory created path : " + directory.getAbsolutePath());
 				} else {
-					System.out.println("Failed to create directory: " + directory.getAbsolutePath());
+					System.out.println("Failed to create Local directory : " + directory.getAbsolutePath());
 				}
 			} else {
-				System.out.println("Directory already exists: " + directory.getAbsolutePath());
+				System.out.println("Local Directory already exists : " + directory.getAbsolutePath());
 			}
 		} else { //If Jenkins Workspace available
 			directory = new File(jenkinsWorkspace + "//" + formateddate);
 			if (!directory.exists()) {
 				boolean created = directory.mkdirs(); // Create directories recursively
 				if (created) {
-					System.out.println("Directory created: " + directory.getAbsolutePath());
+					System.out.println("Jenkins Directory created path : " + directory.getAbsolutePath());
 				} else {
-					System.out.println("Failed to create directory: " + directory.getAbsolutePath());
+					System.out.println("Failed to create Jenkins directory : " + directory.getAbsolutePath());
 				}
 			} else {
-				System.out.println("Directory already exists: " + directory.getAbsolutePath());
+				System.out.println("Jenkins Directory already exists : " + directory.getAbsolutePath());
 			}
 		}
 		return directory;
