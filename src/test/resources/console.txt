@@ -1,0 +1,22 @@
+[RemoteTestNG] detected TestNG version 7.10.2
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Folder created Time : 12_Sep_24_08_11_15
+Jenkins Workspace available or Not : null
+Local Directory is available or Not : false
+Local Directory created path : C:\Users\Public\eclipse-workspace\AkTest\.\src\test\resources\12_Sep_24_08_11_15
+Folder creation method Success
+Config.Properties file is available : true
+Property file load method Success
+Sep 12, 2024 8:11:23 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 128, returning the closest version; found: 127; Please update to a Selenium version that supports CDP version 128
+Browser launching method Success
+euvdev
+Screenshot taken successful & Path :C:\Users\Public\eclipse-workspace\AkTest\.\src\test\resources\12_Sep_24_08_11_15\loginpage.png
+
+===============================================
+Suite
+Total tests run: 1, Passes: 1, Failures: 0, Skips: 0
+===============================================
+
