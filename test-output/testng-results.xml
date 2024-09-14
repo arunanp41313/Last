@@ -2,16 +2,28 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-12T08:11:24 UTC" name="Suite" finished-at="2024-09-12T08:11:29 UTC" duration-ms="5128">
+  <suite started-at="2024-09-14T08:38:26 UTC" name="Suite" finished-at="2024-09-14T08:38:38 UTC" duration-ms="12909">
     <groups>
     </groups>
-    <test started-at="2024-09-12T08:11:24 UTC" name="Test" finished-at="2024-09-12T08:11:29 UTC" duration-ms="5128">
+    <test started-at="2024-09-14T08:38:26 UTC" name="Test" finished-at="2024-09-14T08:38:38 UTC" duration-ms="12909">
       <class name="testCases.LoginPageTestCases">
-        <test-method is-config="true" signature="myCommonMain()[pri:0, instance:testCases.LoginPageTestCases@5656be13]" started-at="2024-09-12T08:11:15 UTC" name="myCommonMain" finished-at="2024-09-12T08:11:24 UTC" duration-ms="9423" status="PASS">
+        <test-method is-config="true" signature="myCommonMain()[pri:0, instance:testCases.LoginPageTestCases@74235045]" started-at="2024-09-14T08:38:20 UTC" name="myCommonMain" finished-at="2024-09-14T08:38:26 UTC" duration-ms="5252" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- myCommonMain -->
-        <test-method signature="LoginMethod()[pri:0, instance:testCases.LoginPageTestCases@5656be13]" started-at="2024-09-12T08:11:25 UTC" name="LoginMethod" finished-at="2024-09-12T08:11:29 UTC" duration-ms="4766" status="PASS">
+        <test-method signature="LoginMethod(java.lang.String,java.lang.String)[pri:0, instance:testCases.LoginPageTestCases@74235045]" started-at="2024-09-14T08:38:27 UTC" name="LoginMethod" data-provider="myExcelDataRead" finished-at="2024-09-14T08:38:38 UTC" duration-ms="11450" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[euvdev]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pass@123]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginMethod -->

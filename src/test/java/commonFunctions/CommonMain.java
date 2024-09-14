@@ -14,6 +14,7 @@ public class CommonMain {
 	public static void myCommonMain() {
 		//For folder creation method
 		try {
+			System.out.println("Folder creation method Started");
 			directory	=FolderCreation.myFolderCreation();
 			System.out.println("Folder creation method Success");
 		} catch (Exception e) {
@@ -21,6 +22,7 @@ public class CommonMain {
 		}
 		//For property filr load method
 		try {
+			System.out.println("Property file load method Started");
 			property = ConfigPropertyFileLoad.myConfigPropertyFileLoad();
 			System.out.println("Property file load method Success");
 		} catch (Exception e) {
@@ -28,6 +30,7 @@ public class CommonMain {
 		}
 		//For browser launch
 		try {
+			System.out.println("Browser launching method Started");
 			driver =BrowserLaunch.myBrowserLaunch();
 			System.out.println("Browser launching method Success");
 		} catch (Exception e) {
