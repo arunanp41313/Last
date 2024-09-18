@@ -16,7 +16,7 @@ public class TakeScreenshot extends CommonMain{
 			//METHOD-- 1 ( It requires common.io dependency for using fileutils
 			TakesScreenshot screenshot= (TakesScreenshot) driver;
 			File sourcefile= screenshot.getScreenshotAs(OutputType.FILE);
-			File destinationfile= new File(directory+ "//"+SSname);
+			File destinationfile= new File(directory+SSname);
 			FileUtils.copyFile(sourcefile, destinationfile);
 			System.out.println("Screenshot taken Path :" + destinationfile.getAbsolutePath());
 			System.out.println("Screenshot taken successful");

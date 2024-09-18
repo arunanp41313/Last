@@ -28,6 +28,13 @@ public class CommonMain {
 		} catch (Exception e) {
 			System.out.println("Property file load method failed");
 		}
+		//foe extents reports
+		System.out.println("extent report starts");
+		try {
+			ExtentsReports.myExtentsReports();
+		} catch (Exception e) {
+			System.out.println("extent report failed");
+		}
 		//For browser launch
 		try {
 			System.out.println("Browser launching method Started");

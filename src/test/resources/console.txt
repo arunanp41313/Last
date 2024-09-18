@@ -3,33 +3,43 @@ SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
 Folder creation method Started
-Folder created Time : 14_Sep_24_08_38_20
+Folder created Time : 18_Sep_24_10_54_12
 Jenkins Workspace available or Not : null
 Local Directory is available or Not : false
-Local Directory created path : C:\Users\Public\eclipse-workspace\AkTest\.\src\test\resources\14_Sep_24_08_38_20
+Local Directory created path : C:\Users\Public\eclipse-workspace\AkTest\.\src\test\resources\18_Sep_24_10_54_12
 Folder creation method Success
 Property file load method Started
 Config.Properties file is available : true
 Property file load method Success
+extent report starts
+.\src\test\resources\18_Sep_24_10_54_12
+true
 Browser launching method Started
-Sep 14, 2024 8:38:25 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Sep 18, 2024 10:54:17 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 128, returning the closest version; found: 127; Please update to a Selenium version that supports CDP version 128
 Browser launching method Success
+---Test method OnStart---
 Excel File Read Started
 Excel File Exists or Not : true
-2024-09-14T08:38:26.270282900Z main ERROR Log4j2 could not find a logging implementation. Please add log4j-core to the classpath. Using SimpleLogger to log to the console...
+2024-09-18T10:54:18.196846500Z main ERROR Log4j2 could not find a logging implementation. Please add log4j-core to the classpath. Using SimpleLogger to log to the console...
 Number of Rows : 2
 Number of Cells : 2
 [euvdev, pass@123]
 Excel File Read Success
+---Test method Started---
 Loginpage testcases Started
 Screenshot taken Started
-Screenshot taken Path :C:\Users\Public\eclipse-workspace\AkTest\.\src\test\resources\14_Sep_24_08_38_20\loginpage.png
+Screenshot taken Path :C:\Users\Public\eclipse-workspace\AkTest\.\src\test\resources\18_Sep_24_10_54_12\loginpage\loginpagess.jpg
 Screenshot taken successful
 Loginpage testcases success
+---Test method Failed---
+Screenshot taken Started
+Screenshot taken Path :C:\Users\Public\eclipse-workspace\AkTest\.\src\test\resources\18_Sep_24_10_54_12\FailedTestCase\Test_LoginMethod.png
+Screenshot taken successful
+---Test method OnFinish---
 
 ===============================================
 Suite
-Total tests run: 1, Passes: 1, Failures: 0, Skips: 0
+Total tests run: 1, Passes: 0, Failures: 1, Skips: 0
 ===============================================
 
