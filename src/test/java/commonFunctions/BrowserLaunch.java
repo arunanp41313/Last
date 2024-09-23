@@ -36,7 +36,7 @@ public class BrowserLaunch extends CommonMain{
 				break;
 			}
 		} catch (Exception e) {
-			System.out.println("URL not Found or Browser not UP!!!");
+			System.out.println("Browser not UP!!!");
 		}
 		return driver;
 	}

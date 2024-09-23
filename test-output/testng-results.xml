@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-18T10:54:17 UTC" name="Suite" finished-at="2024-09-18T10:54:21 UTC" duration-ms="3149">
+  <suite started-at="2024-09-23T13:22:40 UTC" name="Suite" finished-at="2024-09-23T13:22:43 UTC" duration-ms="3538">
     <groups>
     </groups>
-    <test started-at="2024-09-18T10:54:17 UTC" name="Test" finished-at="2024-09-18T10:54:21 UTC" duration-ms="3149">
+    <test started-at="2024-09-23T13:22:40 UTC" name="Test1" finished-at="2024-09-23T13:22:43 UTC" duration-ms="3538">
       <class name="testCases.LoginPageTestCases">
-        <test-method is-config="true" signature="myCommonMain()[pri:0, instance:testCases.LoginPageTestCases@3754a4bf]" started-at="2024-09-18T10:54:12 UTC" name="myCommonMain" finished-at="2024-09-18T10:54:17 UTC" duration-ms="5403" status="PASS">
+        <test-method is-config="true" signature="myCommonMain()[pri:0, instance:testCases.LoginPageTestCases@776aec5c]" started-at="2024-09-23T13:22:35 UTC" name="myCommonMain" finished-at="2024-09-23T13:22:40 UTC" duration-ms="4126" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- myCommonMain -->
-        <test-method signature="LoginMethod(java.lang.String,java.lang.String)[pri:0, instance:testCases.LoginPageTestCases@3754a4bf]" started-at="2024-09-18T10:54:19 UTC" name="LoginMethod" data-provider="myExcelDataRead" finished-at="2024-09-18T10:54:20 UTC" duration-ms="1334" status="FAIL">
+        <test-method signature="LoginMethod(java.lang.String,java.lang.String)[pri:0, instance:testCases.LoginPageTestCases@776aec5c]" started-at="2024-09-23T13:22:41 UTC" name="LoginMethod" data-provider="myExcelDataRead" finished-at="2024-09-23T13:22:43 UTC" duration-ms="1917" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -34,7 +34,7 @@ at org.testng.Assert.fail(Assert.java:111)
 at org.testng.Assert.failNotEquals(Assert.java:1578)
 at org.testng.Assert.assertTrue(Assert.java:57)
 at org.testng.Assert.assertTrue(Assert.java:67)
-at testCases.LoginPageTestCases.LoginMethod(LoginPageTestCases.java:25)
+at testCases.LoginPageTestCases.LoginMethod(LoginPageTestCases.java:22)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -51,25 +51,23 @@ at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 at org.testng.TestRunner.privateRun(TestRunner.java:739)
 at org.testng.TestRunner.run(TestRunner.java:614)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginMethod -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:testCases.LoginPageTestCases@776aec5c]" started-at="2024-09-23T13:22:43 UTC" name="quit" finished-at="2024-09-23T13:22:44 UTC" duration-ms="701" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
       </class> <!-- testCases.LoginPageTestCases -->
-    </test> <!-- Test -->
+    </test> <!-- Test1 -->
   </suite> <!-- Suite -->
 </testng-results>

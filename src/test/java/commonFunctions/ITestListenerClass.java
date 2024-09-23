@@ -8,17 +8,17 @@ public class ITestListenerClass implements ITestListener{
 
 	@Override
 	public void onTestStart(ITestResult result) {
-		System.out.println("---Test method Started---");
+		System.out.println("---@Test  Started---");
 	}
 
 	@Override
 	public void onTestSuccess(ITestResult result) {
-		System.out.println("---Test method Successed---");
+		System.out.println("---@Test  Successed---");
 	}
 
 	@Override
 	public void onTestFailure(ITestResult result) {
-		System.out.println("---Test method Failed---");
+		System.out.println("---@Test Failed---");
 		try {
 			TakeScreenshot.myTakeScreenshot("//"+"FailedTestCase"+"//"+result.getTestContext().getName()+"_"+result.getMethod().getMethodName()+".png");
 		} catch (Exception e) {
@@ -29,7 +29,7 @@ public class ITestListenerClass implements ITestListener{
 
 	@Override
 	public void onTestSkipped(ITestResult result) {
-		System.out.println("---Test method Skipped---");
+		System.out.println("---@Test Skipped---");
 	}
 
 //	@Override
@@ -38,17 +38,17 @@ public class ITestListenerClass implements ITestListener{
 
 	@Override
 	public void onTestFailedWithTimeout(ITestResult result) {
-		System.out.println("---Test method Failed due to Timeout---");
+		System.out.println("---@Test Failed due to Timeout---");
 	}
 
 	@Override
 	public void onStart(ITestContext context) {
-		System.out.println("---Test method OnStart---");
+		System.out.println("---Test OnStart---");
 	}
 
 	@Override
 	public void onFinish(ITestContext context) {
-		System.out.println("---Test method OnFinish---");
+		System.out.println("---Test OnFinish---");
 	}
 
 }

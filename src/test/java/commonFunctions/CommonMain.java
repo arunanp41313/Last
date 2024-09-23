@@ -1,14 +1,22 @@
 package commonFunctions;
 
+import java.awt.Desktop;
 import java.io.File;
+import java.io.IOException;
 import java.util.Properties;
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
+
+import com.aventstack.extentreports.ExtentReports;
 
 public class CommonMain {
 	public static Properties property;
 	public static File directory;
 	public static WebDriver driver;
+	public static ExtentReports extentrp;
 
 	@BeforeSuite
 	public static void myCommonMain() {
@@ -28,12 +36,12 @@ public class CommonMain {
 		} catch (Exception e) {
 			System.out.println("Property file load method failed");
 		}
-		//foe extents reports
-		System.out.println("extent report starts");
+		//for extents reports
 		try {
-			ExtentsReports.myExtentsReports();
+			System.out.println("extent report method started");
+			extentrp= ExtentsReports.myExtentsReports();
 		} catch (Exception e) {
-			System.out.println("extent report failed");
+			System.out.println("extent report method failed");
 		}
 		//For browser launch
 		try {
@@ -43,6 +51,15 @@ public class CommonMain {
 		} catch (Exception e) {
 			System.out.println("Browser launching method failed");
 		}
+
+	}
+
+	@AfterSuite
+	public void quit() throws Exception {
+		//driver.quit();
+		System.out.println("-------------------------Driver.quite----------------------------");
+		extentrp.flush();
+		//Desktop.getDesktop().browse(new File(directory+"//reportsfolder//Myreport.html").toURI());
 	}
 
 }
