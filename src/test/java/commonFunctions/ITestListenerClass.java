@@ -1,10 +1,12 @@
 package commonFunctions;
 
+import org.apache.commons.lang3.exception.ExceptionContext;
+import org.openqa.selenium.bidi.script.ExceptionDetails;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
-public class ITestListenerClass implements ITestListener{
+public class ITestListenerClass extends CommonMain implements ITestListener {
 
 	@Override
 	public void onTestStart(ITestResult result) {
@@ -14,11 +16,13 @@ public class ITestListenerClass implements ITestListener{
 	@Override
 	public void onTestSuccess(ITestResult result) {
 		System.out.println("---@Test  Successed---");
+		//extentrp.createTest(result.getMethod().getMethodName()).pass("Its passed");
 	}
 
 	@Override
 	public void onTestFailure(ITestResult result) {
 		System.out.println("---@Test Failed---");
+		//extentrp.createTest(result.getMethod().getMethodName()).fail(result.getThrowable());
 		try {
 			TakeScreenshot.myTakeScreenshot("//"+"FailedTestCase"+"//"+result.getTestContext().getName()+"_"+result.getMethod().getMethodName()+".png");
 		} catch (Exception e) {

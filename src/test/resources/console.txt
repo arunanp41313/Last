@@ -3,43 +3,40 @@ SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
 Folder creation method Started
-Folder created Time : 23_Sep_24_13_22_36
+Folder created Time : 24_Sep_24_08_58_51
 Jenkins Workspace available or Not : null
 Local Directory is available or Not : false
-Local Directory created path : C:\Users\Public\eclipse-workspace\AkTest\.\src\test\resources\23_Sep_24_13_22_36
+Local Directory created path : C:\Users\Public\eclipse-workspace\AkTest\.\src\test\resources\24_Sep_24_08_58_51
 Folder creation method Success
 Property file load method Started
 Config.Properties file is available : true
 Property file load method Success
 extent report method started
-.\src\test\resources\23_Sep_24_13_22_36
+.\src\test\resources\24_Sep_24_08_58_51
 Browser launching method Started
-Sep 23, 2024 1:22:39 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Sep 24, 2024 8:58:57 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 128, returning the closest version; found: 127; Please update to a Selenium version that supports CDP version 128
 Browser launching method Success
 ---Test OnStart---
 Excel File Read Started
 Excel File Exists or Not : true
-2024-09-23T13:22:40.331082600Z TestNG-tests-1 ERROR Log4j2 could not find a logging implementation. Please add log4j-core to the classpath. Using SimpleLogger to log to the console...
+2024-09-24T08:58:58.001329900Z TestNG-tests-1 ERROR Log4j2 could not find a logging implementation. Please add log4j-core to the classpath. Using SimpleLogger to log to the console...
 Number of Rows : 2
 Number of Cells : 2
 [euvdev, pass@123]
 Excel File Read Success
 ---@Test  Started---
-Loginpage testcases Started---1
-Loginpage testcases success---1
-Screenshot taken Started
-Screenshot taken Path :C:\Users\Public\eclipse-workspace\AkTest\.\src\test\resources\23_Sep_24_13_22_36\Loginpage\loginpage.jpg
-Screenshot taken successful
----@Test Failed---
-Screenshot taken Started
-Screenshot taken Path :C:\Users\Public\eclipse-workspace\AkTest\.\src\test\resources\23_Sep_24_13_22_36\FailedTestCase\Test1_LoginMethod.png
-Screenshot taken successful
+Loginpage testcases Started---
+Loginpage testcases success---
+---@Test  Successed---
+---@Test  Started---
+Test 2 failed---------
+---@Test  Successed---
 ---Test OnFinish---
 -------------------------Driver.quite----------------------------
 
 ===============================================
 Suite
-Total tests run: 1, Passes: 0, Failures: 1, Skips: 0
+Total tests run: 2, Passes: 2, Failures: 0, Skips: 0
 ===============================================
 

@@ -9,8 +9,8 @@
       <class name="testCases.LoginPageTestCases">
         <methods>
           <include name="myCommonMain"/>
+          <include name="loginTestTwo"/>
           <include name="quit"/>
-          <include name="LoginMethod" invocation-numbers="0"/>
         </methods>
       </class> <!-- testCases.LoginPageTestCases -->
     </classes>

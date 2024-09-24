@@ -10,6 +10,7 @@
       <class name="testCases.LoginPageTestCases">
       <methods>
       <include name="LoginMethod"/>
+      <include name="loginTestTwo"/>
       </methods>
       </class>
     </classes>
