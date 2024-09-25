@@ -14,4 +14,7 @@ public class LoginPageObjects {
 	@FindBy(id = "btnSubmit")
 	public static WebElement loginbtn;
 	
+	@FindBy(partialLinkText  = "EuvDev")
+	public static WebElement loginvalidate;
+	
 }
